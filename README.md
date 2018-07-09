@@ -15,6 +15,7 @@ Checkout this repo, install dependencies, then start the process with the follow
 ```bash
 # clone the repo
 > git clone https://github.com/usulla/msukhareva.git
+
 # install dependencies
 > cd your-project-name
 > npm install or yarn install
