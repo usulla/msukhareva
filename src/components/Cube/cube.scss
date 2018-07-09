@@ -1,0 +1,154 @@
+.cube_content {
+    perspective: 1000px;
+    perspective-origin: center 6vw;
+    margin-left: 8vw;
+    transform-style: preserve-3d;
+
+    @media (max-width: $mobile_l) {
+        margin-bottom: 40px;
+        margin-left: 0px;
+    }
+    .cube-fade-in {
+        opacity: 0;
+        transform: translateX(100%);
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        @media (max-width: $mobile_l) {
+            opacity:1;
+            transform: translateX(0);
+        }
+    }
+    .cube {
+        display: flex;
+        flex-direction: column;
+        transform-style: preserve-3d;
+
+        .cube_side {
+            color: $white;
+            width: $cube_side;
+            height: $cube_side;
+            font-family: $font_family;
+            display: block;
+            background: rgba(100%, 0%, 0%, .85);
+            float: left;
+            border: 1px solid $litegray;
+            color: $white;
+            font-weight: 500;
+            font-size: $cube_side/6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: $mobile_l) {
+                width: $cube_side-mob;
+                height: $cube_side-mob;
+                font-size: $cube_side/3.5;
+            }
+        }
+
+        .side_back,
+        .side_front {
+            margin-left: $cube_side;
+
+            @media (max-width: $mobile_l) {
+                margin-left: $cube_side-mob;
+            }
+        }
+        .side_back,
+        .side_front,
+        .side_top {
+            background: rgba(45%, 45%, 45%, .85);
+        }
+    }
+}
+
+.skills.active {
+    .cube_content {
+        @include animation('scale_cube .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+4.7}s forwards');
+    }
+    @media (min-width: $mobile_l+1) {
+        .cube-fade-in {
+            @include animation('fadeIn 1s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim}s forwards');
+        }
+    }
+    .cube {
+        // TODO:
+        // transform: rotateX(-325deg) rotateY(10deg) rotateZ(10deg);
+        @include animation('rotate_cube 10s linear #{$skills-start-anim+5.4}s infinite');
+
+        /* keyframes */
+        @include keyframes(rotate_cube) {
+            100% {
+                transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+            }
+        }
+        @include keyframes(scale_cube) {
+            100% {
+                transform: scale(1.4);
+            }
+        }
+        @include keyframes(side_transform_back) {
+            100% {
+                transform: translateY(50%) rotateX(90deg)
+            }
+        }
+        @include keyframes(side_transform_bottom) {
+            100% {
+                transform: translateZ(-$cube_side/2);
+            }
+        }
+        @media (max-width:$mobile_l) {
+            @include keyframes(side_transform_bottom) {
+                100% {
+                    transform: translateZ(-$cube_side-mob/2);
+                }
+            }
+        }
+        @include keyframes(side_transform_front) {
+            100% {
+                transform: translateY(-50%) rotateX(-90deg);
+            }
+        }
+        @include keyframes(side_transform_left) {
+            100% {
+                transform: translateX(50%) rotateY(90deg);
+            }
+        }
+        @include keyframes(side_transform_right) {
+            100% {
+                transform: translateX(-50%) rotateY(90deg);
+            }
+        }
+        @include keyframes(side_transform_top) {
+            100% {
+                transform: translateX(-200%) translateZ($cube_side/2);
+            }
+        }
+        @media (max-width:$mobile_l) {
+            @include keyframes(side_transform_top) {
+                100% {
+                    transform: translateX(-200%) translateZ($cube_side-mob/2);
+                }
+            }
+        }
+        /* animations for cube sides */
+        .side_bottom.animate {
+            @include animation('side_transform_bottom .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+1.2}s forwards');
+        }
+        .side_back.animate {
+            @include animation('side_transform_back .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+1.9}s forwards');
+        }
+        .side_left.animate {
+            @include animation('side_transform_left .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+2.6}s forwards');
+        }
+        .side_front.animate {
+            @include animation('side_transform_front .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+3.3}s forwards');
+        }
+        .side_right.animate {
+            @include animation('side_transform_right .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+4.0}s forwards');
+        }
+        .side_top.animate {
+            @include animation('side_transform_top .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+4.7}s forwards');
+        }
+    }
+}

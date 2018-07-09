@@ -1,0 +1,97 @@
+.header {
+    height: 100vh;
+    overflow: hidden;
+
+    .header__content {
+        height: calc(100vh);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @media (max-width: $mobile_l+1) {
+            flex-direction:column;
+        }
+    }
+    &__half {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        &--redblock {
+            background: $red;
+
+            @media (max-width: $mobile_l+1) {
+                @include linear-gradient(90deg, $red 50%, $white 50%);
+            }
+        }
+        &--whiteblock {
+            align-items: flex-end;
+
+            @media (max-width: $mobile_l+1) {
+                display:none;
+            }
+        }
+    }
+    @include keyframes(me_from_right) {
+        50% {
+            opacity: .7
+        }
+        100% {
+            @include transform(translateX(0));
+            opacity: 1;
+        }
+    }
+    .header-item {
+        flex: 1;
+    }
+    .header__photo {
+        max-height: 84vh;
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        display:flex;
+        justify-content:center;
+        margin-left:0!important;
+    }
+
+    .header-item .myphoto-img {
+        width: auto!important;
+        max-width: 90%;
+        height: auto;
+        max-height: 100%;
+        opacity: .2;
+        position: absolute;
+        bottom: 0;
+        // right: 1vw;
+        @include transform(translateX(200%));
+        @include animation('me_from_right 2.2s cubic-bezier(.2, .6, .2, 1) forwards');
+
+        @media (max-width: $tablets) {
+            width: auto !important;
+            max-width: 90%;
+            height: auto;
+            max-height: 100%;
+        }
+    }
+
+    .header-item:nth-child(2) {
+        height: calc(100vh - 70px);
+        display: inline-block;
+        position: relative;
+        bottom: 0;
+        margin-left: 0;
+    }
+
+    @media (max-width: $mobile_l+1) {
+        .header-item:nth-child(1) {
+            order: 2;
+            margin-right: 0vw;
+        }
+        .header-item:nth-child(2) {
+            order: 1;
+            margin-left: 0;
+        }
+    }
+}

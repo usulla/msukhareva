@@ -1,0 +1,150 @@
+@include keyframes(up_h1) {
+    0% {
+        opacity: .2;
+        @include transform(translateY(110%));
+    }
+    50% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+        @include transform(translateY(0));
+    }
+}
+
+@include keyframes (from_left) {
+    0% {
+        @include transform(translateX(-300%));
+    }
+    100% {
+        @include transform(rotate(90deg) translateX(0%));
+    }
+}
+
+@include keyframes (fly_code) {
+    0% {}
+    100% {
+        @include transform(translateX(0%) translateY(0%));
+    }
+}
+
+.header-item:nth-child(1) {
+    margin-left: 10vw;
+    position: relative;
+
+    @media (max-width: $mobile_l+1) {
+        margin-left: 19vw;
+    }
+
+    .h1 {
+        color: $black;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 0.7px;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 800;
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+
+        @media (max-width: $mobile_l+1) {
+            font-size: 7.2vw;
+            line-height: 7.2vw;
+        }
+
+        &__myname {
+            display: inline-block;
+            @include animation('up_h1 2.0s cubic-bezier(.2, .6, .2, 1) 0.7s');
+            -webkit-animation-fill-mode: backwards;
+            -moz-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+        }
+        &__profession {
+            color: $red;
+            padding: 0.6vw 1.2vw;
+            background: $litegray;
+            display: inline-block;
+            font-size: 2.5vw;
+            line-height: 2.5vw;
+            margin-top: 1.3vw;
+            @include animation('up_h1 2.0s cubic-bezier(.2, .6, .2, 1) 1.2s backwards');
+
+            @media (max-width: $mobile_l+1) {
+                font-size: 5.3vw;
+                line-height: 5.3vw;
+            }
+            @media (max-width: $mobile_l) {
+                padding: 1.4vw 1.2vw;
+            }
+        }
+        &__hello {
+            color: $white;
+            font-size: 3.1rem;
+            display: inline-block;
+            margin: 0;
+            margin-top: 0.5vw;
+            margin-bottom: 15px;
+            position: absolute;
+            padding-top: 20px;
+            @include transform(translateX(-400%));
+            transform-origin: left top;
+            @include animation('from_left 1.2s cubic-bezier(.2, .6, .2, 1) 1.6s forwards');
+
+            @media (max-width: $mobile_l+1) {
+                color:#fff;
+            }
+        }
+    }
+    .header__description {
+        max-width: 36vw;
+        color: $white;
+        display: inline-block;
+        text-align: justify;
+        @include animation('up_h1 2.0s cubic-bezier(.2, .6, .2, 1) 1.0s backwards');
+
+        @media (max-width: $mobile_l+1) {
+            color:#000;
+            max-width: 75vw;
+        }
+    }
+}
+
+.hidden-code {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    @include transform(rotate(15deg));
+    transform-origin: left top;
+
+    &--code1 {
+        top: -9vw;
+        right: -2vw;
+
+        @media (max-width: $mobile_l+1) {
+            top: -27vw;
+            right: 5vw;
+        }
+    }
+    &--code2 {
+        bottom: -7vw;
+        left: -9vw;
+
+
+        @media (max-width: $mobile_l+1) {
+            bottom: -15vw;
+            left: -11vw;
+        }
+    }
+    &__code-text {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 300;
+        color: $black;
+        @include animation('fly_code 0.7s cubic-bezier(.2, .6, .2, 1) 2.3s forwards');
+    }
+    .animate-code1 {
+        @include transform(translateX(100%) translateY(-200%));
+    }
+    .animate-code2 {
+        @include transform(translateX(-100%) translateY(200%));
+    }
+}
