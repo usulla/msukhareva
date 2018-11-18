@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(countFontSizeHello, 2000);
-    moveShadow();
+    if (document.querySelectorAll('.home').length != 0) {
+        setTimeout(countFontSizeHello, 2000);
+        moveShadow();
+    }
 });
 window.addEventListener('resize', () => {
-    countFontSizeHello();
+    if (document.querySelectorAll('.home').length != 0) {
+        countFontSizeHello();
+    }
 });
+
 /* Functions */
 /* Count font-size for Hello */
 var countFontSizeHello = () => {

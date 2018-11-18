@@ -4,11 +4,18 @@
         const menuLinks = document.querySelectorAll('.menu li');
         const firstLink = document.querySelectorAll('.menu li')[0];
         const highlight = document.createElement('span');
-        var firsLoadMetka = 0;
-        highlight.classList.add('menuHighlight');
-        menuUl.append(highlight);
-        setActiveElement(firstLink);
 
+        if (document.querySelectorAll('.menu-ul').length != 0) {
+            var firsLoadMetka = 0;
+            highlight.classList.add('menuHighlight');
+            menuUl.append(highlight);
+            setActiveElement(firstLink);
+
+            menuLinks.forEach(a => a.addEventListener('mouseenter', setActiveElement));
+            menuLinks.forEach(a => a.addEventListener('click', scrollToPage));
+            window.metkaScrolling = 0;
+            window.addEventListener('resize', menuHighlight);
+        }
         // define active element in menu
         function setActiveElement(element) {
             var currentEl = (element.tagName === 'LI') ? element : this;
@@ -32,18 +39,11 @@
             highlight.style.transform = `translateY(${coordsHighlight.top}px`;
         }
 
-
-        menuLinks.forEach(a => a.addEventListener('mouseenter', setActiveElement));
-
-        window.addEventListener('resize', menuHighlight);
-
-        menuLinks.forEach(a => a.addEventListener('click', scrollToPage));
-        window.metkaScrolling = 0;
         /* Scrolls the page when click on an item */
         function scrollToPage(e) {
             window.metkaScrolling = 1;
             const indexLink = Array.from(menuLinks).indexOf(this);
-            const pageList = document.querySelectorAll('#root > div > header, #root > div > article');
+            const pageList = document.querySelectorAll('#root > div > div > header, #root > div > div> article');
             pageList.forEach((page) => {
                 page.classList.remove('active');
                 if (Array.from(pageList).indexOf(page) === indexLink) {
