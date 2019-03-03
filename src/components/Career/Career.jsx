@@ -1,7 +1,7 @@
 import React from 'react';
-import CareerItem from '../CareerItem/CareerItem.jsx';
+import CareerItem from './CareerItem/CareerItem.jsx';
 
-const Career = ({listcareer, title}) => {
+const Career = ({ title, careerList }) => {
     return (
         <article className='career'>
             <div className='container'>
@@ -9,13 +9,10 @@ const Career = ({listcareer, title}) => {
                     <h2>{title}</h2>
                 </div>
                 <div className='career__content'>
-                    <div className="career__center">
-                     {listcareer
-                        .map((list, index) => 
-                        <CareerItem key={index} listcareer={list}/>
-                    )
-                    }
-                        
+                    <div className='career__center'>
+                        {careerList.map((list, index) => (
+                            <CareerItem key={index} {...list} />
+                        ))}
                     </div>
                 </div>
             </div>

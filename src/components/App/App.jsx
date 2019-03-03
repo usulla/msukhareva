@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from '../Home/Home.jsx';
 import Blog from '../Blog/Blog.jsx';
 
 class App extends Component {
     render() {
         return (
-                <Router>
+            <Router>
                 <div>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/blog" component={Blog} />
+                    <Route exact path='/' component={Home} />
+                    <Route path='/blog' component={Blog} />
                 </div>
-                 </Router>
+            </Router>
         );
     }
 }

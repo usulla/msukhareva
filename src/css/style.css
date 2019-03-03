@@ -1539,6 +1539,15 @@
     -o-animation: fadeIn 1s cubic-bezier(.2, .6, .2, 1) 0.8s forwards;
     animation: fadeIn 1s cubic-bezier(.2, .6, .2, 1) 0.8s forwards; } }
 
+.blog {
+  display: flex; }
+
+.left_column {
+  width: 20vw;
+  background: #eee;
+  height: 100vh;
+  position: fixed; }
+
 html {
   box-sizing: border-box;
   font-size: 15px; }

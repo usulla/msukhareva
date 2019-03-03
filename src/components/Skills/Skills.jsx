@@ -1,9 +1,9 @@
 import React from 'react';
-import SkillsBlocks from '../SkillsBlocks/SkillsBlocks.jsx';
+import SkillsBlocks from './SkillsBlocks/SkillsBlocks.jsx';
 import Cube from '../Cube/Cube.jsx';
 import './skills.js';
 
-const Skills = ({title, listskills}) => {
+const Skills = ({ title, slillslist, cubeskills }) => {
     return (
         <article className='skills'>
             <div className='container'>
@@ -11,11 +11,13 @@ const Skills = ({title, listskills}) => {
                     <h2>{title}</h2>
                 </div>
                 <div className='skills-content'>
-                    <div class="skills-content__block">
-                        <SkillsBlocks list={[listskills[0], listskills[1]]} />
-                        <SkillsBlocks list={[listskills[2], listskills[3], listskills[4]]} />
+                    <div class='skills-content__block'>
+                        <SkillsBlocks list={[slillslist[0], slillslist[1]]} />
+                        <SkillsBlocks
+                            list={[slillslist[2], slillslist[3], slillslist[4]]}
+                        />
                     </div>
-                    <Cube/>
+                    <Cube cubeskills={cubeskills} />
                 </div>
             </div>
         </article>
