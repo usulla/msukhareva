@@ -9,10 +9,10 @@ import './home.js';
 
 class Home extends Component {
     render() {
-        const { dataSkills, dataEducation, dataCareer } = appData;
+        const { dataHeader, dataSkills, dataEducation, dataCareer } = appData;
         return (
             <div className='home'>
-                <Header />
+                <Header {...dataHeader} />
                 <Skills {...dataSkills} />
                 <Education {...dataEducation} />
                 <Career {...dataCareer} />
