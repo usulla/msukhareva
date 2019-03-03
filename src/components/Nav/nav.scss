@@ -4,6 +4,7 @@
     position: absolute;
     width: 100%;
     opacity:0;
+    z-index: 2;
     @include transform(translateY(-270%));
     @include animation('fadeInY 1s cubic-bezier(.2, .6, .2, 1) 2.8s forwards');
 

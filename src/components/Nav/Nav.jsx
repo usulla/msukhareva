@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './nav.js';
 import Logo from '../Logo/Logo.jsx';
 import SocButtons from '../SocButtons/SocButtons.jsx';
@@ -14,6 +15,7 @@ const Nav = ({ list }) => {
                             {li}
                         </li>
                     ))}
+                    <Link to='blog' className='menu-ul__li'>Статьи</Link>
                 </ul>
                 <SocButtons />
             </div>
