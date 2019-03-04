@@ -1,4 +1,4 @@
-(function() {
+(function () {
     document.addEventListener('DOMContentLoaded', () => {
         const menuUl = document.querySelector('.menu-ul');
         const menuLinks = document.querySelectorAll('.menu li');
@@ -49,7 +49,11 @@
                 if (Array.from(pageList).indexOf(page) === indexLink) {
                     page.classList.add('active');
                     const pageCoords = page.getBoundingClientRect().top + window.scrollY;
-                    window.scroll({ top: pageCoords, left: 0, behavior: 'smooth' });
+                    window.scroll({
+                        top: pageCoords,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
                     window.scrollMetka = 1;
                     document.body.style.overflow = 'hidden';
                     setTimeout(() => {
