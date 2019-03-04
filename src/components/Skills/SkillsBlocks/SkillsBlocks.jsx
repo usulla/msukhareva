@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './skillsBlocks.scss';
 
 const SkillsBlocks = ({list}) => {
     return (

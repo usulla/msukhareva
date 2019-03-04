@@ -1,3 +1,6 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
 .skills {
     height: 100vh;
     overflow: hidden;
@@ -19,11 +22,13 @@
             flex-direction: column;
             margin-top: 50px;
         }
+
         .skills-content__block {
             opacity: 0;
             transform: translateX(-100%);
+
             @media (max-width: $mobile_l) {
-                order:2;
+                order: 2;
                 opacity: 1;
                 transform: translateX(0);
             }
@@ -43,9 +48,11 @@
     0% {
         opacity: .2;
     }
+
     50% {
         opacity: .5;
     }
+
     100% {
         opacity: 1;
         @include transform(translateX(0));

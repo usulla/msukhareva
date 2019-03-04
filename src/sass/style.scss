@@ -3,20 +3,8 @@
 // Core
 @import "variables.scss";
 @import "mixins.scss";
-// Components 
-@import "../components/Header/header.scss";
-@import "../components/HeaderTextBlock/headertextblock.scss";
-@import "../components/Nav/nav.scss";
-@import "../components/ToggleMenu/togglemenu.scss";
-@import "../components/MobileMenu/mobile_menu.scss";
-@import "../components/Skills/skills.scss";
-@import "../components/SkillsBlocks/skillsBlocks.scss";
-@import "../components/Cube/Cube.scss";
-@import "../components/Education/education.scss";
-@import "../components/Career/career.scss";
-@import "../components/Blog/blog.scss";
+@import "../css/fontawesome.css";
 
-@import "../components/LeftColumn/leftcolumn.scss";
 // example 
 @media (max-width:$mobile_p) {}
 

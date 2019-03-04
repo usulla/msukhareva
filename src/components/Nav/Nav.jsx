@@ -1,5 +1,6 @@
 import React from 'react';
 import './nav.js';
+import './nav.scss';
 import Logo from '../Logo/Logo.jsx';
 import SocButtons from '../SocButtons/SocButtons.jsx';
 

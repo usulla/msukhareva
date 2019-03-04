@@ -2,6 +2,7 @@ import React from 'react';
 import myphoto_bmstu from '../../images/me_bmstu2.jpg';
 import myphoto_bmstu2 from '../../images/me_bmstu2black.jpg';
 import mgtu_logo from '../../images/mgtu_logo.png';
+import style from './education.scss';
 
 const Education = ({ title, years, university, faculty, specialty, alt }) => {
     return (
@@ -18,8 +19,8 @@ const Education = ({ title, years, university, faculty, specialty, alt }) => {
                         <img className='logoMgtu' src={mgtu_logo} alt={alt} />
                         <div className='years'>{years}</div>
                         <div className='university'>
-                            {university.map(item => (
-                                <span>
+                            {university.map((item, index) => (
+                                <span key={index}>
                                     {item}
                                     <br />
                                 </span>

@@ -2,6 +2,7 @@ import React from 'react';
 import SkillsBlocks from './SkillsBlocks/SkillsBlocks.jsx';
 import Cube from '../Cube/Cube.jsx';
 import './skills.js';
+import style from './skills.scss';
 
 const Skills = ({ title, slillslist, cubeskills }) => {
     return (
@@ -11,7 +12,7 @@ const Skills = ({ title, slillslist, cubeskills }) => {
                     <h2>{title}</h2>
                 </div>
                 <div className='skills-content'>
-                    <div class='skills-content__block'>
+                    <div className='skills-content__block'>
                         <SkillsBlocks list={[slillslist[0], slillslist[1]]} />
                         <SkillsBlocks
                             list={[slillslist[2], slillslist[3], slillslist[4]]}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './mobilemenu.js';
+import './mobilemenu.scss';
 
 const MobileMenu = ({list}) => {
     return (

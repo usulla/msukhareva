@@ -1,24 +1,30 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
 .menu {
     color: $black;
     display: flex;
     position: absolute;
     width: 100%;
-    opacity:0;
+    opacity: 0;
     @include transform(translateY(-270%));
     @include animation('fadeInY 1s cubic-bezier(.2, .6, .2, 1) 2.8s forwards');
 
-@include keyframes(fadeInY) {
-    0% {
-        opacity: .2;
+    @include keyframes(fadeInY) {
+        0% {
+            opacity: .2;
+        }
+
+        50% {
+            opacity: .5;
+        }
+
+        100% {
+            opacity: 1;
+            @include transform(translateY(0));
+        }
     }
-    50% {
-        opacity: .5;
-    }
-    100% {
-        opacity: 1;
-        @include transform(translateY(0));
-    }
-}
+
     .container {
         width: 100%;
         margin-top: 20px;
@@ -31,6 +37,7 @@
     &__logo {
         flex-basis: 20%;
     }
+
     &__menu-ul {
         margin-left: 40px;
         position: absolute;
@@ -38,13 +45,14 @@
         top: 0;
 
         @media (max-width: $mobile_l+1) {
-            display:none!important;
+            display: none !important;
         }
     }
+
     &__socicons {
 
         @media (max-width: $mobile_l+1) {
-            display:none;
+            display: none;
         }
     }
 
@@ -66,9 +74,11 @@
             @media (min-width: $desctops_s) {
                 // font-size: 1.4rem;
             }
+
             &--active {
                 color: $white;
             }
+
             &:before {
                 content: '';
                 position: absolute;
@@ -79,6 +89,7 @@
                 margin-right: 15px;
                 background-color: $red;
             }
+
             &:hover {
                 cursor: pointer;
             }
@@ -127,7 +138,7 @@
 }
 
 .menuHighlight {
-    margin-left:-5px;
+    margin-left: -5px;
     @include transition;
     position: absolute;
     top: 0;

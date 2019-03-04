@@ -1,3 +1,6 @@
+@import "../../../sass/variables.scss";
+@import "../../../sass/mixins.scss";
+
 .all-ul-skills-block {
     float: left;
 
@@ -10,33 +13,40 @@
             list-style: none;
             margin: 8px 0 20px;
         }
+
         li {
             background: $black;
             color: $white;
             text-align: center;
             padding: 0.4vw 1.4vw;
             margin-bottom: 1vw;
-            
+
             @media (max-width: $mobile_l) {
                 padding: 1vw 1.4vw;
                 margin-bottom: 2.2vw;
             }
         }
+
         ul.perfectly li {
             background: $black;
         }
+
         ul.basic li {
             background: $red;
         }
+
         ul.studying li {
             background: $black;
         }
+
         ul.primary li {
             background: $gray;
         }
+
         ul.apply li {
             background: $black;
         }
+
         .skills-title {
             text-transform: uppercase;
             text-align: center;
@@ -45,9 +55,11 @@
             color: $black;
             margin-bottom: 8px;
         }
+
         .skills-title--basic {
             color: $red;
         }
+
         .skills-title--primary {
             color: $gray;
         }

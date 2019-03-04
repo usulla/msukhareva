@@ -20,8 +20,8 @@ const CarrerItem = ({
                 />
             </div>
             <div className='career-item__title'>
-                {title.map(item_title => (
-                    <span>
+                {title.map((item_title, index) => (
+                    <span key={index}>
                         {item_title}
                         <br />
                     </span>

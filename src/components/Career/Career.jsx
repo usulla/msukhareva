@@ -1,5 +1,6 @@
 import React from 'react';
 import CareerItem from './CareerItem/CareerItem.jsx';
+import style from './career.scss';
 
 const Career = ({ title, careerList }) => {
     return (

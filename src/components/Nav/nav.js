@@ -27,7 +27,9 @@
         // define highlight element in menu
         function menuHighlight() {
             const element = document.querySelector('.menu-ul__li--active');
+        
             const coordsLink = element.getBoundingClientRect();
+    
             const coordsHighlight = {
                 width: coordsLink.width,
                 height: coordsLink.height,

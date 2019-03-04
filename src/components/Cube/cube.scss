@@ -1,3 +1,6 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
 .cube_content {
     perspective: 1000px;
     perspective-origin: center 6vw;
@@ -8,16 +11,19 @@
         margin-bottom: 40px;
         margin-left: 0px;
     }
+
     .cube-fade-in {
         opacity: 0;
         transform: translateX(100%);
         perspective: 1000px;
         transform-style: preserve-3d;
+
         @media (max-width: $mobile_l) {
-            opacity:1;
+            opacity: 1;
             transform: translateX(0);
         }
     }
+
     .cube {
         display: flex;
         flex-direction: column;
@@ -54,6 +60,7 @@
                 margin-left: $cube_side-mob;
             }
         }
+
         .side_back,
         .side_front,
         .side_top {
@@ -66,11 +73,13 @@
     .cube_content {
         @include animation('scale_cube .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+4.7}s forwards');
     }
+
     @media (min-width: $mobile_l+1) {
         .cube-fade-in {
             @include animation('fadeIn 1s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim}s forwards');
         }
     }
+
     .cube {
         // TODO:
         // transform: rotateX(-325deg) rotateY(10deg) rotateZ(10deg);
@@ -82,21 +91,25 @@
                 transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
             }
         }
+
         @include keyframes(scale_cube) {
             100% {
                 transform: scale(1.4);
             }
         }
+
         @include keyframes(side_transform_back) {
             100% {
                 transform: translateY(50%) rotateX(90deg)
             }
         }
+
         @include keyframes(side_transform_bottom) {
             100% {
                 transform: translateZ(-$cube_side/2);
             }
         }
+
         @media (max-width:$mobile_l) {
             @include keyframes(side_transform_bottom) {
                 100% {
@@ -104,26 +117,31 @@
                 }
             }
         }
+
         @include keyframes(side_transform_front) {
             100% {
                 transform: translateY(-50%) rotateX(-90deg);
             }
         }
+
         @include keyframes(side_transform_left) {
             100% {
                 transform: translateX(50%) rotateY(90deg);
             }
         }
+
         @include keyframes(side_transform_right) {
             100% {
                 transform: translateX(-50%) rotateY(90deg);
             }
         }
+
         @include keyframes(side_transform_top) {
             100% {
                 transform: translateX(-200%) translateZ($cube_side/2);
             }
         }
+
         @media (max-width:$mobile_l) {
             @include keyframes(side_transform_top) {
                 100% {
@@ -131,22 +149,28 @@
                 }
             }
         }
+
         /* animations for cube sides */
         .side_bottom.animate {
             @include animation('side_transform_bottom .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+1.2}s forwards');
         }
+
         .side_back.animate {
             @include animation('side_transform_back .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+1.9}s forwards');
         }
+
         .side_left.animate {
             @include animation('side_transform_left .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+2.6}s forwards');
         }
+
         .side_front.animate {
             @include animation('side_transform_front .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+3.3}s forwards');
         }
+
         .side_right.animate {
             @include animation('side_transform_right .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+4.0}s forwards');
         }
+
         .side_top.animate {
             @include animation('side_transform_top .7s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim+4.7}s forwards');
         }
