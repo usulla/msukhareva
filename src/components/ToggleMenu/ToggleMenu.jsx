@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './togglemenu.scss';
 
 const ToggleMenu = () => {
     return (

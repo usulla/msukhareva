@@ -1,6 +1,9 @@
-.left_column{
-	width:20vw;
-	background:#eee;
-	height:100vh;
-	position:fixed;
+@import "../../../sass/variables.scss";
+@import "../../../sass/mixins.scss";
+
+.left_column {
+	width: 20vw;
+	background: #eee;
+	height: 100vh;
+	position: fixed;
 }

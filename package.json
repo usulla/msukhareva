@@ -1,15 +1,17 @@
 {
   "name": "aboutme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "node-sass": "^4.11.0",
+    "nodelist-foreach-polyfill": "^1.2.0",
     "google-fonts-webpack-plugin": "^0.4.4",
     "gulp-concat": "^2.6.1",
-    "gulp-uglifycss": "^1.0.9",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "gulp-uglifycss": "^1.1.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "2.1.5"
   },
   "scripts": {
     "buildw": "webpack",
@@ -19,21 +21,22 @@
     "eject": "react-scripts eject",
     "sass": "node-sass --output-style -o src/css src/css"
   },
+  "browserslist": [
+    ">0.2%",
+    "ie 10",
+    "not dead",
+    "not op_mini all"
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0",
-    "style-loader": "^0.21.0",
-    "uglifyjs-webpack-plugin": "^1.2.7"
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "uglifyjs-webpack-plugin": "^1.3.0"
   }
 }

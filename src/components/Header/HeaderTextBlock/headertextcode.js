@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    if (document.querySelectorAll('.home').length != 0) {
+    if (document.querySelectorAll('.home').length !== 0) {
         setTimeout(countFontSizeHello, 2000);
         moveShadow();
     }
 });
 window.addEventListener('resize', () => {
-    if (document.querySelectorAll('.home').length != 0) {
+    if (document.querySelectorAll('.home').length !== 0) {
         countFontSizeHello();
     }
 });

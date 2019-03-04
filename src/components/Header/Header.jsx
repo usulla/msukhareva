@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './header.scss';
 import myphoto from '../../images/me-f-black.png';
 import Nav from '../Nav/Nav.jsx';
 import ToggleMenu from '../ToggleMenu/ToggleMenu.jsx';

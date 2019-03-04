@@ -1,5 +1,6 @@
 import React from 'react';
 import './headertextcode.js';
+import './headertextblock.scss';
 
 const HeaderTextBlock = props => {
     const { title, name, profession, description } = props;

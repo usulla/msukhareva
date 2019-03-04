@@ -1,3 +1,6 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
 .education {
     background: $white;
     height: 100vh;
@@ -39,9 +42,11 @@
                 border-radius: 5px;
             }
         }
+
         .education__photo,
         .education__info {
             opacity: 0;
+
             @media (max-width: $mobile_l) {
                 opacity: 1;
             }
@@ -60,10 +65,12 @@
             @media (min-width: $mobile_l+1) and (max-width:$tablets) {
                 width: 54vw;
             }
+
             @media (max-width: $mobile_l) {
                 width: 80vw;
                 @include transform(translateX(0));
             }
+
             .logoMgtu {
                 width: 8vw;
                 margin-right: 30px;
@@ -72,6 +79,7 @@
                 @media (min-width: $mobile_l+1) and (max-width:$tablets) {
                     width: 11vw;
                 }
+
                 @media (max-width:$mobile_l) {
                     width: 15vw;
                 }
@@ -81,13 +89,16 @@
             .university {
                 margin-bottom: 14px;
             }
+
             .years {
                 font-size: .9rem;
             }
+
             .university {
                 font-size: 1rem;
                 line-height: 1.4rem;
             }
+
             .faculty,
             .specialty {
                 text-transform: none;
@@ -96,6 +107,7 @@
                 font-size: 1rem;
                 display: inline-block;
             }
+
             .faculty {
                 margin-top: 40px;
 
@@ -103,6 +115,7 @@
                     margin-top: 10px;
                 }
             }
+
             .specialty {
                 margin-top: 5px;
             }
@@ -112,6 +125,7 @@
 
 @media (min-width: $mobile_l+1) {
     .education.active {
+
         .education__photo,
         .education__info {
             @include animation('fadeIn 1s cubic-bezier(.2, .6, .2, 1) #{$skills-start-anim}s forwards');

@@ -1,3 +1,6 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
 .mobile-menu {
     display: none;
     position: fixed;
@@ -11,14 +14,16 @@
         display: block;
 
         ul li {
-            opacity: 1!important;
-            -webkit-transition-delay: 0.25s!important;
-            transition-delay: 0.25s!important;
+            opacity: 1 !important;
+            -webkit-transition-delay: 0.25s !important;
+            transition-delay: 0.25s !important;
         }
+
         .mobile-menu__bg {
             width: calc(100vw + 100vh);
         }
     }
+
     .mobile-menu-inner {
         position: relative;
         width: 100%;
@@ -28,6 +33,7 @@
         display: flex;
         align-items: center;
     }
+
     ul {
         position: relative;
         list-style: none;
@@ -37,6 +43,7 @@
         max-width: 420px;
         z-index: 3;
     }
+
     ul li {
         font-size: calc(14px + 3vw);
         color: $white;
@@ -53,6 +60,7 @@
         opacity: 0;
         @include transition(opacity, 0.4s);
     }
+
     &__close,
     &__bg {
         position: absolute;
@@ -60,6 +68,7 @@
         height: 100%;
         z-index: 1;
     }
+
     &__bg {
         width: 0;
         left: 50%;
@@ -67,6 +76,7 @@
         @include transition(width, 0.25s, linear);
         @include transform(skewX(-45deg) translateX(-50%));
     }
+
     &__close {
         left: 0;
         width: 100%;
