@@ -4,11 +4,11 @@ const SocButtons = () => {
     return (
         <div className='socicons header__socicons'>
             <a
-                className='socicons__icon socicons__icon--vk'
-                href='https://vk.com/id37266155'
+                className='socicons__icon socicons__icon--github'
+                href='https://github.com/usulla'
                 rel='noopener noreferrer'
                 target='_blank'>
-                <i className='fab fa-vk' />
+                <i className='fab fa-github' />
             </a>
             <a
                 className='socicons__icon socicons__icon--fb'
@@ -18,11 +18,11 @@ const SocButtons = () => {
                 <i className='fab fa-facebook-f' />
             </a>
             <a
-                className='socicons__icon socicons__icon--github'
-                href='https://github.com/usulla'
+                className='socicons__icon socicons__icon--vk'
+                href='https://vk.com/id37266155'
                 rel='noopener noreferrer'
                 target='_blank'>
-                <i className='fab fa-github' />
+                <i className='fab fa-vk' />
             </a>
         </div>
     );
