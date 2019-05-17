@@ -16,7 +16,7 @@ const Nav = ({ list }) => {
                             {li}
                         </li>
                     ))}
-                    <Link to='blog' className='menu-ul__li'>Статьи</Link>
+                    {/*<li className='menu-ul__li'><Link to='blog'>Статьи</Link></li> */}
                 </ul>
                 <SocButtons />
             </div>
