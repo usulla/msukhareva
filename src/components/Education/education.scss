@@ -50,7 +50,7 @@
             @media (max-width: $mobile_l) {
                 opacity: 1;
             }
-        }
+        } 
 
         .education__info {
             @include transform(translateX(100%));

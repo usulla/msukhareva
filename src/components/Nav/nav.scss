@@ -6,7 +6,7 @@
     display: flex;
     position: absolute;
     width: 100%;
-    opacity:0;
+    opacity: 0;
     z-index: 2;
     @include transform(translateY(-270%));
     @include animation('fadeInY 1s cubic-bezier(.2, .6, .2, 1) 2.8s forwards');
@@ -76,8 +76,18 @@
                 // font-size: 1.4rem;
             }
 
+            a {
+                @include transition(color);
+                text-decoration: none;
+                color: $black;
+            }
+
             &--active {
                 color: $white;
+
+                a {
+                    color: $white;
+                }
             }
 
             &:before {
