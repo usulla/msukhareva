@@ -42,7 +42,7 @@
         }
 
         /* Scrolls the page when click on an item */
-        function scrollToPage(e) {
+        function scrollToPage(e) { 
             window.metkaScrolling = 1;
             const indexLink = Array.from(menuLinks).indexOf(this);
             const pageList = document.querySelectorAll('#root > div > div > header, #root > div > div> article');

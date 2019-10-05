@@ -110,7 +110,7 @@ function animationScroll(e) {
                         // window.scroll({ top: pageCoords, left: 0, behavior: 'smooth' });
                         var timePassed = time - start;
                         var result = Math.ceil(toScroll2 * timePassed / duration);
-                        console.log(toScroll2, 'toScroll333');
+                        // console.log(toScroll2, 'toScroll333');
 
                         result = (result > direction * toScroll2) ? toScroll2 : (result == 0) ? direction : result;
 
@@ -123,8 +123,8 @@ function animationScroll(e) {
                                     indexNextPage = 2; //?????
                                 }
                                 pageList.forEach(page => page.classList.remove('active'));
-                                console.log(indexNextPage, 'indexNextPage11');
-                                console.log(Array.from(pageList)[indexNextPage]);
+                                // console.log(indexNextPage, 'indexNextPage11');
+                                // console.log(Array.from(pageList)[indexNextPage]);
                                 Array.from(pageList)[indexNextPage].classList.add('active');
                             }());
                             document.body.style.overflowY = 'hidden';

@@ -11,6 +11,17 @@ const CarrerItem = ({
     descriptin,
     alt
 }) => {
+    function calcWorkPeriod (startDate, endDate){
+        startDate = new Date(startDate);
+        endDate = endDate ? new Date(endDate): new Date();
+        var months;
+        months = (endDate.getFullYear() - startDate.getFullYear()) * 12;
+        months -= startDate.getMonth() + 1;
+        months += endDate.getMonth();
+        years = Math.round(months/12);
+        months = months%12 <=0 ? '': Math.round(months%12);
+        return `${years} года ${months} месяцев`;
+    }
     return (
         <div className='career-item'>
             <div className='career-item__logo'>
@@ -29,7 +40,7 @@ const CarrerItem = ({
             </div>
             <div className='career-item__profession'>{profession}</div>
             <div className='career-item__period'>{period}</div>
-            <div className='career-item__years'>{years}</div>
+            <div className='career-item__years'>{years === '' ? calcWorkPeriod('2017-04-17') : years}</div>
             <div className='career-item__description'>
                 {descriptin.map((item_descr, index) => (
                     <p key={index}>{item_descr}</p>

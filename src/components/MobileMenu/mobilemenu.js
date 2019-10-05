@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     toggleMobileMenu();
 });
+// const mobileMenuItems = document.querySelectorAll('.mobile-menu-inner li');
+// mobileMenuItems.forEach(item => item.addEventListener('click', console.log(99));
+
+// const scrollToPage = () => {
+//     console.log(99);
+//     toggleMobileMenu();
+// };
 
 function toggleMobileMenu() {
     const menuToggle = document.querySelector('.toggle-menu'),
