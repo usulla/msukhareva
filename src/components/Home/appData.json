@@ -15,7 +15,7 @@
         "slillslist": [{
                 "title": "На отлично",
                 "classname": "perfectly",
-                "skills": ["HTML5", "CSS3", "JQuery", "SASS", "LESS", "Bootstrap", "AJAX"]
+                "skills": ["HTML5", "CSS3", "JQuery", "SASS", "LESS", "Bootstrap"]
             },
             {
                 "title": "Уверенно",

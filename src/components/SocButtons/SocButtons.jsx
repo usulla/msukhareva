@@ -18,12 +18,20 @@ const SocButtons = () => {
                 <i className='fab fa-facebook-f' />
             </a>
             <a
+                className='socicons__icon socicons__icon--fb'
+                href='https://www.instagram.com/maria_suxareva'
+                rel='noopener noreferrer'
+                target='_blank'>
+                <i className='fab fa-instagram' />
+            </a>
+            
+            {/* <a
                 className='socicons__icon socicons__icon--vk'
                 href='https://vk.com/id37266155'
                 rel='noopener noreferrer'
                 target='_blank'>
                 <i className='fab fa-vk' />
-            </a>
+            </a> */}
         </div>
     );
 };
