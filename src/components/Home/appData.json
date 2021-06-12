@@ -15,12 +15,23 @@
         "slillslist": [{
                 "title": "На отлично",
                 "classname": "perfectly",
-                "skills": ["HTML5", "CSS3", "JQuery", "SASS", "LESS", "Bootstrap"]
+                "skills": [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "ES6",
+                    "React",
+                    "Redux",
+                    "JQuery",
+                    "SASS, LESS",
+                    "StyledComp",
+                    "CSSModules"
+                  ]
             },
             {
                 "title": "Уверенно",
                 "classname": "basic",
-                "skills": ["JavaScript", "ES6", "React"]
+                "skills": ["Next.js", "TypeScript"]
             },
             {
                 "title": "Осваиваю",
@@ -35,10 +46,11 @@
             {
                 "title": "Использую",
                 "classname": "apply",
-                "skills": ["Git", "Gulp", "Webpack", "БЭМ", "Photoshop", "Scetch"]
+                "skills": ["Git", "Webpack", "Jest", "Gulp", "БЭМ", "Figma", "Photoshop", "Scetch"]
             }
         ],
-        "cubeskills": ["React", "HTML5", " JavaScript", "ES6", "CSS3", " SASS", "LESS", "JQuery"]
+        "cubeskills": ["React", " Redux", "HTML5", " CSS3", "JavaScript", " ES6", "SASS",
+            " LESS", "Next.js", "TypeScript"]
 
     },
     "dataEducation": {
@@ -47,16 +59,16 @@
         "university": ["Московский государственный", "технический университет", "им. Н.Э. Баумана"],
         "faculty": "Факультет робототехники и комплексной автоматизации",
         "specialty": "Системы автоматизированного проектирования",
-        "alt": "Frontend-разработчик Сухарева Мария"
+        "alt": "Senior Frontend Developer Сухарева Мария"
     },
 
     "dataCareer": {
         "title": "Опыт работы",
         "careerList": [{
                 "id": 1,
-                "alt": "Frontend-разработчик Сухарева Мария",
+                "alt": "Senior Frontend Developer Сухарева Мария",
                 "title": ["Газпром-Медиа", "Развлекательное Телевидение"],
-                "profession": "Frontend-разработчик",
+                "profession": "Senior Frontend Developer",
                 "period": "Апрель 2017 — по настоящее время",
                 "years": "",
                 "descriptin": ["Разработка, верстка и поддержка фронтенда новых сервисов компании с нуля и поддержка существующих.", "Работая в этой компании кроме хорошего профессионального опыта, приобрела больше опыта командной работы, взаимодействуя с дизайнерами, backend специалистами и менеджерами проектов."]

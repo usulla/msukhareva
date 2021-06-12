@@ -18,17 +18,20 @@
         "skills": [
           "HTML5",
           "CSS3",
+          "JavaScript",
+          "ES6",
+          "React",
+          "Redux",
           "JQuery",
           "SASS",
           "LESS",
-          "Bootstrap",
-          "AJAX"
+          "Bootstrap"
         ]
       },
       {
         "title": "Уверенно",
         "classname": "basic",
-        "skills": ["JavaScript", "ES6", "React"]
+        "skills": ["Next.js", "ES6", "React"]
       },
       {
         "title": "Осваиваю",

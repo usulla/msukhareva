@@ -9,29 +9,33 @@ const Cube = ({ cubeskills }) => {
                     <div className='cube_row'>
                         <div className='cube_side side_back'>
                             {cubeskills[0]}
+                            <br />
+                            {cubeskills[1]}
                         </div>
                     </div>
                     <div className='cube_row'>
                         <div className='cube_side side_left'>
-                            {cubeskills[1]}
-                        </div>
-                        <div className='cube_side side_bottom'>
                             {cubeskills[2]}
                             <br />
                             {cubeskills[3]}
                         </div>
-                        <div className='cube_side side_right'>
+                        <div className='cube_side side_bottom'>
                             {cubeskills[4]}
+                            <br />
+                            {cubeskills[5]}
+                        </div>
+                        <div className='cube_side side_right'>
+                            {cubeskills[6]}
+                            <br />
+                            {cubeskills[7]}
                         </div>
                         <div className='cube_side side_top'>
-                            {cubeskills[5]}
-                            <br />
-                            {cubeskills[6]}
+                            {cubeskills[8]}
                         </div>
                     </div>
                     <div className='cube_row'>
                         <div className='cube_side side_front'>
-                            {cubeskills[7]}
+                            {cubeskills[9]}
                         </div>
                     </div>
                 </div>
