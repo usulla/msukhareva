@@ -24,6 +24,13 @@ const SocButtons = () => {
                 target='_blank'>
                 <i className='fab fa-instagram' />
             </a>
+            <a
+                className='socicons__icon socicons__icon--in'
+                href='https://www.linkedin.com/in/maria-sukhareva-88b6029a/'
+                rel='noopener noreferrer'
+                target='_blank'>
+                <i className='fab fa-linkedin' />
+            </a>
             
             {/* <a
                 className='socicons__icon socicons__icon--vk'
