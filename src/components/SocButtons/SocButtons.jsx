@@ -4,6 +4,13 @@ const SocButtons = () => {
     return (
         <div className='socicons header__socicons'>
             <a
+                className='socicons__icon socicons__icon--fb'
+                href='https://www.instagram.com/maria_suxareva'
+                rel='noopener noreferrer'
+                target='_blank'>
+                <i className='fab fa-instagram' />
+            </a>
+            <a
                 className='socicons__icon socicons__icon--github'
                 href='https://github.com/usulla'
                 rel='noopener noreferrer'
@@ -16,13 +23,6 @@ const SocButtons = () => {
                 rel='noopener noreferrer'
                 target='_blank'>
                 <i className='fab fa-facebook-f' />
-            </a>
-            <a
-                className='socicons__icon socicons__icon--fb'
-                href='https://www.instagram.com/maria_suxareva'
-                rel='noopener noreferrer'
-                target='_blank'>
-                <i className='fab fa-instagram' />
             </a>
             <a
                 className='socicons__icon socicons__icon--in'
