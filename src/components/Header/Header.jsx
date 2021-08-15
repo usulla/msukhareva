@@ -20,7 +20,7 @@ const Header = ({ navtitle, h1_text, alt }) => {
                     <div className='header-item header__photo'>
                         <img className='myphoto-img' src={myphoto} alt={alt} />
                     </div>
-                </div>
+                </div> 
             </div>
         </header>
     );
