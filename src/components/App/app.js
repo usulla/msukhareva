@@ -17,7 +17,7 @@ const instagramApp = navigator.userAgent.includes("Instagram")
 
 document.addEventListener('DOMContentLoaded', () => {
     window.scrollMetka = 0;
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 768 && !instagramApp) {
         document.addEventListener('scroll', debounce(animationScroll));
     }
     window.startScroll = 0;
