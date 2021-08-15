@@ -1,7 +1,7 @@
 {
   "name": "aboutme",
   "homepage": "https://msukhareva.com",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "google-fonts-webpack-plugin": "^0.4.4",

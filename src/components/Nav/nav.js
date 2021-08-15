@@ -5,7 +5,7 @@
         const firstLink = document.querySelectorAll('.menu li')[0];
         const highlight = document.createElement('span');
 
-        if (document.querySelectorAll('.menu-ul').length != 0) {
+        if (document.querySelectorAll('.menu-ul').length !== 0) {
             var firsLoadMetka = 0;
             highlight.classList.add('menuHighlight');
             menuUl.append(highlight);
