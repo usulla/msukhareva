@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollMetka = 0;
     if (window.innerWidth >= 768 && !instagramApp) {
         document.addEventListener('scroll', debounce(animationScroll));
+        console.log("Sorry! I'm testing my site now")
+        console.log(navigator.userAgent)
     }
     window.startScroll = 0;
 });
