@@ -13,8 +13,9 @@ function debounce(func, wait = 60, immediate = true) {
         if (callNow) func.apply(context, args);
     };
 }
-document.addEventListener('DOMContentLoaded', () => {
+const instagramApp = navigator.userAgent.includes("Instagram")
 
+document.addEventListener('DOMContentLoaded', () => {
     window.scrollMetka = 0;
     if (window.innerWidth >= 768) {
         document.addEventListener('scroll', debounce(animationScroll));
@@ -22,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.startScroll = 0;
 });
 window.addEventListener('resize', () => {
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 768 && !instagramApp) {
         document.addEventListener('scroll', debounce(animationScroll));
     }
-    else{
+    else {
         document.removeEventListener('scroll', debounce(animationScroll));
     }
 });
