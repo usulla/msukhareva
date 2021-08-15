@@ -12,7 +12,7 @@ function toggleMobileMenu() {
     if (menuToggle) {
         menuToggle.addEventListener('click', openMobileMenu);
     }
-    if (closeBtn) {
+    if (closeBtn) { 
         closeBtn.addEventListener('click', closeMobileMenu);
     }
     function scrollToPage(e) {
