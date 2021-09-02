@@ -83,7 +83,7 @@
         }
 
         &__profession {
-            margin-bottom: 15px;
+            margin-bottom: 0px;
             color: $red;
         }
 
@@ -92,7 +92,7 @@
         }
 
         &__logo {
-            min-height: 65px;
+            min-height: 35px;
             margin-bottom: 20px;
 
             @media (max-width: $mobile_l) {
@@ -104,9 +104,12 @@
                 max-width: 250px;
             }
         }
-
+        &__position {
+            // padding-left:15px;
+            // border-left:1px solid $gray;
+        }
         &__description {
-            text-align: justify;
+            text-align: left;
         }
     }
 }

@@ -2,24 +2,23 @@ import React from 'react';
 import career_logo_gazprom from '../../../images/gazprom-media-logo5.png';
 import career_logo_freelance from '../../../images/freelance_logo.png';
 
-const CarrerItem = ({
-    id,
+const CarrerItem = ({ id,
     title,
-    profession,
+    positions,
     period,
     years,
     descriptin,
-    alt
-}) => {
-    function calcWorkPeriod (startDate, endDate){
+    alt }) => {
+
+    function calcWorkPeriod(startDate, endDate) {
         startDate = new Date(startDate);
-        endDate = endDate ? new Date(endDate): new Date();
+        endDate = endDate ? new Date(endDate) : new Date();
         var months;
         months = (endDate.getFullYear() - startDate.getFullYear()) * 12;
         months -= startDate.getMonth() + 1;
         months += endDate.getMonth();
-        years = Math.round(months/12);
-        months = months%12 <=0 ? '': Math.round(months%12);
+        let years = Math.round(months / 12);
+        months = months % 12 <= 0 ? '' : Math.round(months % 12);
         return `${years} года ${months} месяцев`;
     }
     return (
@@ -38,14 +37,18 @@ const CarrerItem = ({
                     </span>
                 ))}
             </div>
-            <div className='career-item__profession'>{profession}</div>
-            <div className='career-item__period'>{period}</div>
-            <div className='career-item__years'>{years === '' ? calcWorkPeriod('2017-04-17') : years}</div>
-            <div className='career-item__description'>
-                {descriptin.map((item_descr, index) => (
-                    <p key={index}>{item_descr}</p>
-                ))}
-            </div>
+            {positions.map((position, index) => (
+                <div className="career-item__position">
+                    <div className='career-item__profession'>{position.profession}</div>
+                    <div className='career-item__period'>{position.period}</div>
+                    <div className='career-item__years'>{position.years === '' ? calcWorkPeriod('2021-06-01') : position.years}</div>
+                    <div className='career-item__description'>
+                        {position.descriptin.map((item_descr, index) => (
+                            <p key={index}>{item_descr}</p>
+                        ))}
+                    </div>
+                </div>
+            ))}
         </div>
     );
 };

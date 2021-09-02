@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './header.scss';
 import myphoto from '../../images/me-f-black.png';
+import myphoto2 from '../../images/me_2.png';
 import Nav from '../Nav/Nav.jsx';
 import ToggleMenu from '../ToggleMenu/ToggleMenu.jsx';
 import MobileMenu from '../MobileMenu/MobileMenu.jsx';

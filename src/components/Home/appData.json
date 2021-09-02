@@ -1,6 +1,11 @@
 {
     "dataHeader": {
-        "navtitle": ["Обо мне", "Что я умею", "Образование", "Карьера"],
+        "navtitle": [
+            "Обо мне",
+            "Что я умею",
+            "Образование",
+            "Карьера"
+        ],
         "h1_text": {
             "title": "Привет!",
             "name": "Я Сухарева Мария,",
@@ -9,10 +14,10 @@
         },
         "alt": "Frontend-разработчик Сухарева Мария"
     },
-
     "dataSkills": {
         "title": "Что я умею",
-        "slillslist": [{
+        "slillslist": [
+            {
                 "title": "На отлично",
                 "classname": "perfectly",
                 "skills": [
@@ -26,61 +31,129 @@
                     "SASS, LESS",
                     "StyledComp",
                     "CSSModules"
-                  ]
+                ]
             },
             {
                 "title": "Уверенно",
                 "classname": "basic",
-                "skills": ["Next.js", "TypeScript"]
+                "skills": [
+                    "Next.js",
+                    "TypeScript"
+                ]
             },
             {
                 "title": "Осваиваю",
                 "classname": "studying",
-                "skills": ["Node.js"]
+                "skills": [
+                    "Node.js"
+                ]
             },
             {
                 "title": "Основы",
                 "classname": "primary",
-                "skills": ["PHP", "MySQL"]
+                "skills": [
+                    "PHP",
+                    "MySQL"
+                ]
             },
             {
                 "title": "Использую",
                 "classname": "apply",
-                "skills": ["Git", "Webpack", "Jest", "Gulp", "БЭМ", "Figma", "Photoshop", "Scetch"]
+                "skills": [
+                    "Git",
+                    "Webpack",
+                    "Jest",
+                    "Gulp",
+                    "БЭМ",
+                    "Figma",
+                    "Photoshop",
+                    "Scetch"
+                ]
             }
         ],
-        "cubeskills": ["React", " Redux", "HTML5", " CSS3", "JavaScript", " ES6", "SASS",
-            " LESS", "Next.js", "TypeScript"]
-
+        "cubeskills": [
+            "React",
+            " Redux",
+            "HTML5",
+            " CSS3",
+            "JavaScript",
+            " ES6",
+            "SASS",
+            " LESS",
+            "Next.js",
+            "TypeScript"
+        ]
     },
     "dataEducation": {
         "title": "Образование",
         "years": "2009 -2015 г.",
-        "university": ["Московский государственный", "технический университет", "им. Н.Э. Баумана"],
+        "university": [
+            "Московский государственный",
+            "технический университет",
+            "им. Н.Э. Баумана"
+        ],
         "faculty": "Факультет робототехники и комплексной автоматизации",
         "specialty": "Системы автоматизированного проектирования",
-        "alt": "Senior Frontend Developer Сухарева Мария"
+        "alt": "Team Lead Frontend Developer Сухарева Мария"
     },
-
     "dataCareer": {
         "title": "Опыт работы",
-        "careerList": [{
+        "careerList": [
+            {
                 "id": 1,
-                "alt": "Senior Frontend Developer Сухарева Мария",
-                "title": ["Газпром-Медиа", "Развлекательное Телевидение"],
-                "profession": "Senior Frontend Developer",
-                "period": "Апрель 2017 — по настоящее время",
-                "years": "",
-                "descriptin": ["Разработка, верстка и поддержка фронтенда новых сервисов компании с нуля и поддержка существующих.", "Работая в этой компании кроме хорошего профессионального опыта, приобрела больше опыта командной работы, взаимодействуя с дизайнерами, backend специалистами и менеджерами проектов."]
+                "alt": "Team Lead Frontend Developer Сухарева Мария",
+                "title": [
+                    "Газпром-Медиа",
+                    "Развлекательное Телевидение"
+                ],
+                "positions": [
+                    {
+                        "id": 3,
+                        "profession": "Руководитель группы разработки",
+                        "period": "июнь 2021 — по настоящее время",
+                        "years": "4 месяца",
+                        "descriptin": [
+                            "Работа по Agile, задачи в Jira, документация в Confluence, пуши через pull requests, CI/CD. Построение команды и культуры frontend разработки."
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "profession": "Senior Frontend Developer/Team Lead",
+                        "period": "апрель 2020 — июнь 2021",
+                        "years": "1 год 2 месяца",
+                        "descriptin": [
+                            "Разработка архитектурных решений, code-review, написание кода, построение команды и культуры frontend разработки."
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "profession": "Frontend Developer",
+                        "period": "апрель 2017 — апрель 2020",
+                        "years": "3 года",
+                        "descriptin": [
+                            "Разработка, верстка и поддержка фронтенда новых сервисов компании с нуля и поддержка существующих"
+                        ]
+                    }
+                ]
             },
             {
                 "id": 2,
                 "alt": "Frontend-разработчик Сухарева Мария",
-                "title": ["Фриланс", "Индивидуальное предпринимательство"],
-                "profession": "Веб-разработчик",
-                "period": "Апрель 2013 — апрель 2017",
-                "years": "4 года 1 месяц",
-                "descriptin": ["Во время обучения в МГТУ им.Баумана начала работать как фрилансер, создавая первое время простые сайты, а затем уже интернет-магазины 'под ключ'.", "Постоянное сотрудничество с удаленными back-end специалистами."]
+                "title": [
+                    "Фриланс",
+                    "Индивидуальное предпринимательство"
+                ],
+                "positions": [
+                    {
+                        "profession": "Веб-разработчик",
+                        "period": "апрель 2013 — апрель 2017",
+                        "years": "4 года",
+                        "descriptin": [
+                            "Во время обучения в МГТУ им.Баумана начала работать как фрилансер, создавая первое время простые сайты, а затем уже интернет-магазины 'под ключ'.",
+                            "Постоянное сотрудничество с удаленными backend разработчиками."
+                        ]
+                    }
+                ]
             }
         ]
     }
