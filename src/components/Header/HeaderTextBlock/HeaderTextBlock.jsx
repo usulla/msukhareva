@@ -3,7 +3,7 @@ import './headertextcode.js';
 import './headertextblock.scss';
 
 const HeaderTextBlock = props => {
-    const { title, name, profession, description } = props;
+    const { title, name, profession_part1, profession_part2, description } = props;
     return (
         <div className='header-item'>
             <div className='hidden-code hidden-code--code1'>
@@ -22,7 +22,8 @@ const HeaderTextBlock = props => {
                     <span className='h1__myname'>{name}</span>
                 </div>
                 <div className='animate-hidden'>
-                    <span className='h1__profession'>{profession}</span>
+                    <span className='h1__profession'>{profession_part1}</span><br/>
+                    <span className='h1__profession'>{profession_part2}</span>
                 </div>
             </h1>
             <div className='animate-hidden'>
