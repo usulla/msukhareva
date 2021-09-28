@@ -21,7 +21,7 @@
         opacity: 0.2;
         @include transform(translateY(230%));
         @media (max-width: $mobile_l+1) {
-            @include transform(translateY(240%));
+            @include transform(translateY(260%));
         }
     }
 
@@ -59,7 +59,7 @@
 
     @media (max-width: $mobile_l+1) {
         margin-left: 19vw;
-        margin-top: -30px;
+        margin-top: -50px;
     }
 
     .h1 {
