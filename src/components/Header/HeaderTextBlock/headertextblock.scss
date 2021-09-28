@@ -58,7 +58,7 @@
         @include transform(translateX(0%) translateY(0%));
     }
 }
-.header-item .instagram {
+.header-item:nth-child(1) .instagram {
     margin-top: 0px !important;
 }
 .header-item:nth-child(1) {
