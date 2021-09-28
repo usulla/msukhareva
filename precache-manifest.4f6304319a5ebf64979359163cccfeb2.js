@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "521c002e508dc188108d",
-    "url": "/static/css/main.3d3d7648.chunk.css"
+    "revision": "0bd3a2f73ae8fc85a968",
+    "url": "/static/css/main.863dcf4a.chunk.css"
   },
   {
-    "revision": "521c002e508dc188108d",
-    "url": "/static/js/main.521c002e.chunk.js"
+    "revision": "0bd3a2f73ae8fc85a968",
+    "url": "/static/js/main.0bd3a2f7.chunk.js"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -28,20 +28,20 @@ self.__precacheManifest = [
     "url": "/static/media/mgtu_logo.8477b081.png"
   },
   {
-    "revision": "a15d6b64457779ae6a087a17a92d6d0d",
-    "url": "/static/media/Exo2-Light.a15d6b64.eot"
-  },
-  {
     "revision": "eba47d8fcd7a9ae5d0e939b3fe94a216",
     "url": "/static/media/Exo2-Light.eba47d8f.woff2"
+  },
+  {
+    "revision": "a15d6b64457779ae6a087a17a92d6d0d",
+    "url": "/static/media/Exo2-Light.a15d6b64.eot"
   },
   {
     "revision": "8ccea5783e75930495ff8c2911b6ee48",
     "url": "/static/media/Exo2-Light.8ccea578.woff"
   },
   {
-    "revision": "fdc6dfbb2f60c9962d2865401385c912",
-    "url": "/static/media/Exo2-Light.fdc6dfbb.ttf"
+    "revision": "bac6554b41624310cf2ed086dad6df8e",
+    "url": "/static/media/Exo2-Light.bac6554b.svg"
   },
   {
     "revision": "dd75338b6b44bd6e4e20885ad7e10150",
@@ -52,48 +52,48 @@ self.__precacheManifest = [
     "url": "/static/media/Exo2-Regular.8b5a4746.woff2"
   },
   {
+    "revision": "fdc6dfbb2f60c9962d2865401385c912",
+    "url": "/static/media/Exo2-Light.fdc6dfbb.ttf"
+  },
+  {
     "revision": "82c19cf360154b0a2045922b0da0fb63",
     "url": "/static/media/Exo2-Regular.82c19cf3.woff"
-  },
-  {
-    "revision": "bac6554b41624310cf2ed086dad6df8e",
-    "url": "/static/media/Exo2-Light.bac6554b.svg"
-  },
-  {
-    "revision": "57587021e251edcf9f8ebc9450c7849d",
-    "url": "/static/media/Exo2-Medium.57587021.woff2"
   },
   {
     "revision": "8c7325fb1e03b3a7aeca13265d7b3186",
     "url": "/static/media/Exo2-Regular.8c7325fb.ttf"
   },
   {
-    "revision": "d2c92efc24ab2f30faba4a5327e4a5cf",
-    "url": "/static/media/Exo2-Medium.d2c92efc.woff"
+    "revision": "424a1c14b8d19b523ffe04bcd90705c6",
+    "url": "/static/media/Exo2-Regular.424a1c14.svg"
+  },
+  {
+    "revision": "57587021e251edcf9f8ebc9450c7849d",
+    "url": "/static/media/Exo2-Medium.57587021.woff2"
   },
   {
     "revision": "de2fa9c40756e6d51d2262bfb84de7fe",
     "url": "/static/media/Exo2-Medium.de2fa9c4.eot"
   },
   {
+    "revision": "d2c92efc24ab2f30faba4a5327e4a5cf",
+    "url": "/static/media/Exo2-Medium.d2c92efc.woff"
+  },
+  {
     "revision": "7db33f3bfcacc6702d586619a1550272",
     "url": "/static/media/Exo2-Medium.7db33f3b.ttf"
   },
   {
-    "revision": "424a1c14b8d19b523ffe04bcd90705c6",
-    "url": "/static/media/Exo2-Regular.424a1c14.svg"
-  },
-  {
-    "revision": "7c3fd37c9ea4d1e4008834a1ed4257aa",
-    "url": "/static/media/Exo2-SemiBold.7c3fd37c.eot"
+    "revision": "493876bc41bc05af004ebef8a0c1dccb",
+    "url": "/static/media/Exo2-Medium.493876bc.svg"
   },
   {
     "revision": "abe9d9f596f5716341b1299adfb1250e",
     "url": "/static/media/Exo2-SemiBold.abe9d9f5.woff2"
   },
   {
-    "revision": "493876bc41bc05af004ebef8a0c1dccb",
-    "url": "/static/media/Exo2-Medium.493876bc.svg"
+    "revision": "7c3fd37c9ea4d1e4008834a1ed4257aa",
+    "url": "/static/media/Exo2-SemiBold.7c3fd37c.eot"
   },
   {
     "revision": "be46a86c9bbeeeb3352c35a69d5638a5",
@@ -108,10 +108,6 @@ self.__precacheManifest = [
     "url": "/static/media/Exo2-Bold.5403f35c.eot"
   },
   {
-    "revision": "e8583d69eb3d34c5d08cc61e838e2840",
-    "url": "/static/media/Exo2-Bold.e8583d69.woff"
-  },
-  {
     "revision": "596339738e7f486bfe3d64bef597a548",
     "url": "/static/media/Exo2-Bold.59633973.woff2"
   },
@@ -120,12 +116,20 @@ self.__precacheManifest = [
     "url": "/static/media/Exo2-SemiBold.95638ae7.svg"
   },
   {
+    "revision": "e8583d69eb3d34c5d08cc61e838e2840",
+    "url": "/static/media/Exo2-Bold.e8583d69.woff"
+  },
+  {
     "revision": "27cf23b1d890a26df465bf96ecfb85a4",
     "url": "/static/media/Exo2-Bold.27cf23b1.ttf"
   },
   {
     "revision": "0ade4517bf0bf5dce44ba7681c9786f8",
     "url": "/static/media/Exo2-ExtraBold.0ade4517.eot"
+  },
+  {
+    "revision": "c3385388c2a049349ad81eb56cf321be",
+    "url": "/static/media/Exo2-Bold.c3385388.svg"
   },
   {
     "revision": "73509f17dae29d0342131a6d87896404",
@@ -140,10 +144,6 @@ self.__precacheManifest = [
     "url": "/static/media/Exo2-ExtraBold.b3e42ff5.ttf"
   },
   {
-    "revision": "c3385388c2a049349ad81eb56cf321be",
-    "url": "/static/media/Exo2-Bold.c3385388.svg"
-  },
-  {
     "revision": "1869e98fa75096868d280ec8c4b72ce7",
     "url": "/static/media/Roboto-Thin.1869e98f.eot"
   },
@@ -152,16 +152,12 @@ self.__precacheManifest = [
     "url": "/static/media/Roboto-Thin.46a7fc42.woff2"
   },
   {
-    "revision": "68772c71c50534fc4026d1f20d6ecbbf",
-    "url": "/static/media/Roboto-Thin.68772c71.woff"
-  },
-  {
     "revision": "c391ee56f0a830ad3ef2ca0a9fb5f52b",
     "url": "/static/media/Exo2-ExtraBold.c391ee56.svg"
   },
   {
-    "revision": "e4092969046f796ae584aca7816db455",
-    "url": "/static/media/Roboto-Light.e4092969.woff2"
+    "revision": "68772c71c50534fc4026d1f20d6ecbbf",
+    "url": "/static/media/Roboto-Thin.68772c71.woff"
   },
   {
     "revision": "c53bce93965232513b69ff748b23cc02",
@@ -170,6 +166,10 @@ self.__precacheManifest = [
   {
     "revision": "97b9f3cef53936fc52da2c6eacb0ac84",
     "url": "/static/media/Roboto-Light.97b9f3ce.eot"
+  },
+  {
+    "revision": "e4092969046f796ae584aca7816db455",
+    "url": "/static/media/Roboto-Light.e4092969.woff2"
   },
   {
     "revision": "56991a6627087ad081029dc0a64a91e4",
@@ -272,12 +272,12 @@ self.__precacheManifest = [
     "url": "/static/media/fa-brands-400.f319eac1.woff2"
   },
   {
-    "revision": "e2a76403183eff8967cf6318c6e51509",
-    "url": "/static/media/fa-brands-400.e2a76403.eot"
-  },
-  {
     "revision": "d034c1b2ee84dd981ef2e637754a0b4f",
     "url": "/static/media/fa-brands-400.d034c1b2.woff"
+  },
+  {
+    "revision": "e2a76403183eff8967cf6318c6e51509",
+    "url": "/static/media/fa-brands-400.e2a76403.eot"
   },
   {
     "revision": "e0fc4e5c719b4dc10c97fc111d7374e1",
@@ -336,7 +336,7 @@ self.__precacheManifest = [
     "url": "/static/media/me_bmstu2.073a411c.jpg"
   },
   {
-    "revision": "d95cfb7cff7323ac05df4bc3c12142d1",
+    "revision": "40e033d293c82c4d13a9af64a7c0ff54",
     "url": "/index.html"
   }
 ];
