@@ -1,6 +1,15 @@
 @import "../../../sass/variables.scss";
 @import "../../../sass/mixins.scss";
 
+:root {
+    --slide-up-y: 295%;
+}
+@media (min-width: $mobile_l+1) {
+    :root {
+        --slide-up-y: 230%;
+    }
+}
+
 @include keyframes(up_h1) {
     0% {
         opacity: 0.2;
@@ -19,10 +28,7 @@
 @include keyframes(up_h1_profession) {
     0% {
         opacity: 0.2;
-        @include transform(translateY(230%));
-        @media (max-width: $mobile_l+1) {
-            @include transform(translateY(260%));
-        }
+        @include transform(translateY(var(--slide-up-y)));
     }
 
     50% {
