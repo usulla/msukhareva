@@ -6,7 +6,7 @@ const HeaderTextBlock = props => {
     const instagramApp = navigator.userAgent.includes("Instagram")
     const { title, name, profession_part1, profession_part2, description, description_mobile } = props;
     return (
-        <div className={`header-item ${(window.innerWidth >= 768 && instagramApp) && 'instagram'}`}>
+        <div className={`header-item ${(window.innerWidth < 768 && instagramApp) && 'instagram'}`}>
             <div className='hidden-code hidden-code--code1'>
                 <div className='hidden-code__code-text animate-code1'>
                     {'</code>'.toString()}

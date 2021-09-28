@@ -60,15 +60,16 @@
 }
 
 .header-item:nth-child(1) {
-    & > .instagram { 
-        margin-top: 0px;
-    }
+
     margin-left: 10vw;
     position: relative;
 
     @media (max-width: $mobile_l+1) {
         margin-left: 19vw;
         margin-top: -50px;
+    }
+    & > .instagram { 
+        margin-top: 0px!important;
     }
 
     .h1 {
