@@ -82,7 +82,7 @@
             animation-fill-mode: backwards;
 
             @media (max-width: $mobile_l+1) {
-                margin-bottom: 2vw;
+                margin-bottom: 1.5vw;
             }
         }
 
@@ -93,12 +93,13 @@
             display: inline-block;
             font-size: 2.5vw;
             line-height: 2.5vw;
-            margin-top: 1.8vw;
+            margin-top: 0.8vw;
             @include animation("up_h1_profession 2.0s cubic-bezier(.2, .6, .2, 1) 1.2s backwards");
 
             @media (max-width: $mobile_l+1) {
                 font-size: 7.2vw;
                 line-height: 7.2vw;
+                margin-top: 1.8vw;
             }
 
             @media (max-width: $mobile_l) {
