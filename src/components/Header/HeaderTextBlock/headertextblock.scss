@@ -87,7 +87,7 @@
             display: inline-block;
             font-size: 2.5vw;
             line-height: 2.5vw;
-            margin-top: 1.0vw;
+            margin-top: .8vw;
             @include animation('up_h1_profession 2.0s cubic-bezier(.2, .6, .2, 1) 1.2s backwards');
 
             @media (max-width: $mobile_l+1) {
