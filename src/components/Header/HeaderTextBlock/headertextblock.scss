@@ -60,6 +60,9 @@
 }
 
 .header-item:nth-child(1) {
+    & > .instagram { 
+        margin-top: 0px;
+    }
     margin-left: 10vw;
     position: relative;
 
