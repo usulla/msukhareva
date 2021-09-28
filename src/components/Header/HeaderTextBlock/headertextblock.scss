@@ -3,12 +3,12 @@
 
 @include keyframes(up_h1) {
     0% {
-        opacity: .2;
+        opacity: 0.2;
         @include transform(translateY(110%));
     }
 
     50% {
-        opacity: .8;
+        opacity: 0.8;
     }
 
     100% {
@@ -18,12 +18,12 @@
 }
 @include keyframes(up_h1_profession) {
     0% {
-        opacity: .2;
+        opacity: 0.2;
         @include transform(translateY(230%));
     }
 
     50% {
-        opacity: .8;
+        opacity: 0.8;
     }
 
     100% {
@@ -31,7 +31,7 @@
         @include transform(translateY(0));
     }
 }
-@include keyframes (from_left) {
+@include keyframes(from_left) {
     0% {
         @include transform(translateX(-300%));
     }
@@ -41,8 +41,9 @@
     }
 }
 
-@include keyframes (fly_code) {
-    0% {}
+@include keyframes(fly_code) {
+    0% {
+    }
 
     100% {
         @include transform(translateX(0%) translateY(0%));
@@ -62,7 +63,7 @@
         text-transform: uppercase;
         margin: 0;
         letter-spacing: 0.7px;
-        font-family: 'Exo 2', sans-serif;
+        font-family: "Exo 2", sans-serif;
         font-weight: 800;
         font-size: 3.5vw;
         line-height: 3.5vw;
@@ -70,14 +71,19 @@
         @media (max-width: $mobile_l+1) {
             font-size: 7.2vw;
             line-height: 7.2vw;
+            max-width: 75vw;
         }
 
         &__myname {
             display: inline-block;
-            @include animation('up_h1 2.0s cubic-bezier(.2, .6, .2, 1) 0.7s');
+            @include animation("up_h1 2.0s cubic-bezier(.2, .6, .2, 1) 0.7s");
             -webkit-animation-fill-mode: backwards;
             -moz-animation-fill-mode: backwards;
             animation-fill-mode: backwards;
+
+            @media (max-width: $mobile_l+1) {
+                margin-bottom: 2vw;
+            }
         }
 
         &__profession {
@@ -87,12 +93,12 @@
             display: inline-block;
             font-size: 2.5vw;
             line-height: 2.5vw;
-            margin-top: .8vw;
-            @include animation('up_h1_profession 2.0s cubic-bezier(.2, .6, .2, 1) 1.2s backwards');
+            margin-top: 1.8vw;
+            @include animation("up_h1_profession 2.0s cubic-bezier(.2, .6, .2, 1) 1.2s backwards");
 
             @media (max-width: $mobile_l+1) {
-                font-size: 5.3vw;
-                line-height: 5.3vw;
+                font-size: 7.2vw;
+                line-height: 7.2vw;
             }
 
             @media (max-width: $mobile_l) {
@@ -111,7 +117,7 @@
             padding-top: 20px;
             @include transform(translateX(-400%));
             transform-origin: left top;
-            @include animation('from_left 1.2s cubic-bezier(.2, .6, .2, 1) 1.6s forwards');
+            @include animation("from_left 1.2s cubic-bezier(.2, .6, .2, 1) 1.6s forwards");
 
             @media (max-width: $mobile_l+1) {
                 color: #fff;
@@ -124,7 +130,7 @@
         color: $white;
         display: inline-block;
         text-align: justify;
-        @include animation('up_h1 2.0s cubic-bezier(.2, .6, .2, 1) 1.0s backwards');
+        @include animation("up_h1 2.0s cubic-bezier(.2, .6, .2, 1) 1.0s backwards");
 
         @media (max-width: $mobile_l+1) {
             color: #000;
@@ -154,7 +160,6 @@
         bottom: -7vw;
         left: -9vw;
 
-
         @media (max-width: $mobile_l+1) {
             bottom: -15vw;
             left: -11vw;
@@ -166,7 +171,7 @@
         font-size: 2rem;
         font-weight: 300;
         color: $black;
-        @include animation('fly_code 0.7s cubic-bezier(.2, .6, .2, 1) 2.3s forwards');
+        @include animation("fly_code 0.7s cubic-bezier(.2, .6, .2, 1) 2.3s forwards");
     }
 
     .animate-code1 {
