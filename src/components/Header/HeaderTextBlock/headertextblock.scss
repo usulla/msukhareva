@@ -58,7 +58,7 @@
         @include transform(translateX(0%) translateY(0%));
     }
 }
-
+.header-item 
 .header-item:nth-child(1) {
 
     margin-left: 10vw;
@@ -68,7 +68,7 @@
         margin-left: 19vw;
         margin-top: -50px;
     }
-    & > .instagram { 
+    & .instagram { 
         margin-top: 0px!important;
     }
 
