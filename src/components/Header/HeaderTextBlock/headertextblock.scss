@@ -58,18 +58,16 @@
         @include transform(translateX(0%) translateY(0%));
     }
 }
-.header-item 
+.header-item .instagram {
+    margin-top: 0px !important;
+}
 .header-item:nth-child(1) {
-
     margin-left: 10vw;
     position: relative;
 
     @media (max-width: $mobile_l+1) {
         margin-left: 19vw;
         margin-top: -50px;
-    }
-    & .instagram { 
-        margin-top: 0px!important;
     }
 
     .h1 {
