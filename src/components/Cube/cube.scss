@@ -28,7 +28,10 @@
         display: flex;
         flex-direction: column;
         transform-style: preserve-3d;
-
+        
+        .cube_row{
+            transform-style: preserve-3d;
+        }
         .cube_side {
             color: $white;
             width: $cube_side;
