@@ -36,11 +36,21 @@
                 ]
             },
             {
+                "title": "Основы",
+                "classname": "primary",
+                "skills": [
+                    "PHP",
+                    "MySQL"
+                ]
+            },
+            {
                 "title": "Уверенно",
                 "classname": "basic",
                 "skills": [
                     "Next.js",
-                    "TypeScript"
+                    "TypeScript",
+                    "Vue.js",
+                    "Jest"
                 ]
             },
             {
@@ -48,14 +58,6 @@
                 "classname": "studying",
                 "skills": [
                     "Node.js"
-                ]
-            },
-            {
-                "title": "Основы",
-                "classname": "primary",
-                "skills": [
-                    "PHP",
-                    "MySQL"
                 ]
             },
             {
